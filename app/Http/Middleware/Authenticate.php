@@ -26,7 +26,8 @@ class Authenticate
     }
 
     /**
-     * Handle an incoming request.
+     * 認証ミドルウェアの handle() は、 ['middleware' => 'auth'] が設定されたルーティングにアクセスされたときに
+     * 毎回呼ばれるメソッド
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
