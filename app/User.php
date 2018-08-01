@@ -41,8 +41,8 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasMany(Micropost::class);
     }
-
-    //  User がフォローしている User 達
+                                  
+    // User がフォローしている User 達
     public function followings()
     {
         return $this->belongsToMany(User::class, 'user_follow', 'user_id', 'follow_id')->withTimestamps();
